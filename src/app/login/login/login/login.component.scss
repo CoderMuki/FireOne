@@ -1,0 +1,91 @@
+.login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background: #212121;
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    height: 100vh;
+    width: 100vw;
+  }
+
+.form {
+    width: 300px;
+    height: fit-content;
+    margin: 15% auto;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    border-radius: 2.5em;
+    background-color: #212121;
+    box-shadow: 5px 5px 15px #000000, -5px -5px 15px #676767;
+    transition: .4s ease-in-out;
+    padding: 15px;
+    text-align: center;
+    .box{
+        margin-top: 20px;
+    }
+    .button{
+        margin-top: 30px;
+    }
+    ::placeholder{
+        color: rgba(77, 75, 75, 0.767);
+    }
+  }
+  
+  .heading {
+    text-align: center;
+    color: #e8e8e8;
+    top: 1em;
+    font-weight: bold;
+    font-size: 19px;
+  }
+  
+  .input {
+    height: 2.4em;
+    width: 250px;
+    border-radius: 0.75em;
+    border: none;
+    outline: none;
+    background-color: #212121;
+    color: #e8e8e8;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: inset 2px 2px 5px #000000, inset -2px -2px 5px #676767;
+  }
+  
+  .submit {
+    padding: 10px 25px;
+    border-radius: 5em;
+    width: 170px;
+    font-size: 15px;
+    font-family: sans-serif;
+    outline: none;
+    transition: 0.2s;
+    background-color: #212121;
+    color: blue;
+    border: 2px solid blue;
+    cursor: pointer;
+  }
+  
+  .submit:hover {
+    color: #000000;
+    font-weight: 600;
+    border: 2px solid #21212100;
+    background-color: blue;
+  }
+
+  .signup{
+    margin-top: 20px;
+    color: white;
+    font-size: 14px;
+    #sign{
+        color: blue;
+        font-size: 15px;
+        cursor: pointer;
+    }
+  }

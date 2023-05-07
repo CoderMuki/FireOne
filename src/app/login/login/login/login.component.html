@@ -1,0 +1,31 @@
+<div class="login">
+    <form *ngIf="!signup" [formGroup]="loginForm" class="form">
+        <p class="heading">Hi there !!</p>
+        <div class="box">
+            <input matInput placeholder="User Name" formControlName="username" class="input">
+        </div>
+        <div class="box">
+            <input matInput placeholder="Password" formControlName="password" class="input">
+        </div>
+        <div class="button">
+            <button class="submit">Submit</button>
+        </div>        
+        <p class="signup">New here? <u id="sign" (click)="signup = true">Sign up</u> </p>
+    </form>
+    <form *ngIf="signup" [formGroup]="loginForm" class="form">
+        <p class="heading">Lets get you in !!</p>
+        <div class="box">
+            <input matInput placeholder="Name" formControlName="name" class="input">
+        </div>
+        <div class="box">
+            <input matInput placeholder="User Name" formControlName="username" class="input">
+        </div>
+        <div class="box">
+            <input matInput placeholder="Password" formControlName="password" class="input">
+        </div>
+        <div class="button">
+            <button class="submit">Register</button>
+        </div>        
+        <p class="signup">Registered Already? <u id="sign" (click)="signup = false">Sign up</u> </p>
+    </form>
+</div>
